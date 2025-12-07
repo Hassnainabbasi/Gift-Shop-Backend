@@ -46,7 +46,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       
-      "https://shark-nutrition-frontend.vercel.app",
+      "https://gift-shop-backend-nine.vercel.app",
     ],
     credentials: true,
   })

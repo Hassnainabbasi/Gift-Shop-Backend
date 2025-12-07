@@ -41,16 +41,7 @@ const connectDB = async () => {
 const app = express();
 
 // =============== MIDDLEWARE ===============
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      
-      "https://gift-shop-backend-nine.vercel.app",
-    ],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
